@@ -1,6 +1,6 @@
 package prinPatrDisEstructural.L01_Bridge;
 
-public class RemoteControl
+public class RemoteControl 
 {
     private Device device;
 

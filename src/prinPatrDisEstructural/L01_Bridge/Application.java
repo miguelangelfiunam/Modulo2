@@ -3,7 +3,7 @@ package prinPatrDisEstructural.L01_Bridge;
 public class Application
 {
     public static void main(String[] args) {
-        Television television = new Television();
+        Device television = new Television();
         RemoteControl remoteControl = new RemoteControl(television);
         System.out.println("Toggling power to turn tv on");
         remoteControl.togglePower();
@@ -20,7 +20,7 @@ public class Application
         System.out.println("In channel: " + television.getChannel());
         System.out.println("Volume: " + television.getVolume());
 
-        Radio radio = new Radio();
+        Device radio = new Radio();
         AdvancedRemoteControl advancedRemoteControl = new AdvancedRemoteControl(radio);
         System.out.println("Toggling power to turn radio on");
         advancedRemoteControl.togglePower();
