@@ -3,10 +3,12 @@ package prinPatrDis.A03_Encapsula_Ejercicio;
 public class Banco {
 	private String nombreBanco;
 	private double dinero;
+	private Intercambio intercambio;
 
-	public Banco(String nombreBanco, double dinero) {
+	public Banco(String nombreBanco, double dinero, String intercambioPais) {
 		this.nombreBanco = nombreBanco;
 		this.dinero = dinero;
+		this.intercambio = new Intercambio(intercambioPais);
 	}
 
 	/**
@@ -15,25 +17,8 @@ public class Banco {
 	 * @param valor
 	 * @return
 	 */
-	public double convierteDineroMX(String pais) {
-		double conversion = 0;
-		switch (pais) {
-		case "MX":
-			conversion = this.dinero;
-			break;
-		case "JP":
-			conversion = 5.62160 * this.dinero;
-			break;
-		case "EU":
-			conversion = 0.042 * this.dinero;
-			break;
-		case "US":
-			conversion = 0.049 * this.dinero;
-			break;
-		default:
-			break;
-		}
-		return conversion;
+	public double convierteDineroMX() {
+		return intercambio.intercambiaMX(dinero);
 	}
 
 	public String getNombreBanco() {
