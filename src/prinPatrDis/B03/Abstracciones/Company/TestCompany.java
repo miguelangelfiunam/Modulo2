@@ -26,9 +26,24 @@ public class TestCompany {
 		employeesSS.add(employee_6);
 		employeesSS.add(employee_7);
 		employeesSS.add(employee_8);
+		
 		Company companySS = new SystemSoftwareCompany("CompanySS", employeesSS);
 
 		System.out.println(companySS);
 		System.out.println(companySS.createSoftware("Nomina"));
+		
+		List<Employee> employeesSB = new ArrayList<Employee>();
+		Employee employee_9 = new AdministratorEmployee();
+		Employee employee_10 = new DesignerEmployee();
+		Employee employee_11 = new ProgrammerEmployee();
+		Employee employee_12 = new TesterEmployee();
+		employeesSB.add(employee_9);
+		employeesSB.add(employee_10);
+		employeesSB.add(employee_11);
+		employeesSB.add(employee_12);
+		Company companySB = new BusinessSoftwareCompany("Company Business", employeesSB);
+
+		System.out.println(companySB);
+		System.out.println(companySB.createSoftware("Negocio imprenta"));
 	}
 }
