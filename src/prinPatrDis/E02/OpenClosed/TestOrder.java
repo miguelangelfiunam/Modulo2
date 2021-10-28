@@ -35,5 +35,9 @@ public class TestOrder {
 		shipping = new SeaShipping();
 		order.setShipping(shipping);
 		System.out.println("Costo de envio en MX compra grande por mar: " + order.getShippingCost());
+		
+		shipping = new SpaceShipping();
+		order.setShipping(shipping);
+		System.out.println("Costo de envio en MX compra grande por el espacio: " + order.getShippingCost());
 	}
 }
