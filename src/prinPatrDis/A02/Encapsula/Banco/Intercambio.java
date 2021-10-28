@@ -1,4 +1,4 @@
-package prinPatrDis.A03.Encapsula.Ejercicio;
+package prinPatrDis.A02.Encapsula.Banco;
 
 public class Intercambio {
 	private String pais;

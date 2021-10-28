@@ -4,10 +4,11 @@ public class Application {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Banco bancoMexicano = new Banco("Banco de México", 1000, "JP");
-		System.out.println(
-				"[" + bancoMexicano.getDinero() + "]" + " MXN -> [" + bancoMexicano.convierteDineroMX() + "] JPY");
-		
+		Jugador j1 = new Jugador("Jugador 1", "Sub zero");
+		Jugador j2 = new Jugador("Jugador 2", "Sub zero 2");
+		j1.iniciaPelea(j1, j2);
+		j1.iniciaPelea(j1, j2);
+		j1.iniciaPelea(j2, j1);
 	}
 
 }
