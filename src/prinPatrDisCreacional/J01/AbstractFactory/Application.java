@@ -40,6 +40,9 @@ public class Application
         else if (furnitureStyle.equals("modern")) {
             furnitureFactory = new ModernFurnitureFactory();
         }
+        else if (furnitureStyle.equals("industrial")) {
+            furnitureFactory = new IndustrialFurnitureFactory();
+        }
         else {
             throw new Exception("Unknown furniture set.");
         }
@@ -60,7 +63,7 @@ public class Application
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Que estilo prefieres (victorian/modern): ");
+        System.out.print("Que estilo prefieres (victorian/modern/industrial): ");
         String furnitureStyle = scanner.next();
 
         Application application = new Application();

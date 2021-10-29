@@ -21,6 +21,9 @@ public class Application {
 		case "lin":
 			dialog = new LinuxDialog();
 			break;
+		case "and":
+			dialog = new AndroidDialog();
+			break;
 		default:
 			System.out.println("Opcion incorrecta");
 			break;
