@@ -15,5 +15,14 @@ public class Application
         SquarePegAdapter largeSquarePegAdapter = new SquarePegAdapter(largeSquarePeg);
         System.out.println("Hole fits small square peg: " + hole.fits(smallSquarePegAdapter));
         System.out.println("Hole doesn't fit large square peg: " + hole.fits(largeSquarePegAdapter));
+        
+        HexagonalPeg smallHexagonalPeg = new HexagonalPeg(3);
+        HexagonalPegAdapter smallHexagonalPegAdapter = new HexagonalPegAdapter(smallHexagonalPeg);
+        System.out.println("Hole fits small hexagonal peg: " + hole.fits(smallHexagonalPegAdapter));
+        
+        HexagonalPeg largeHexagonalPeg = new HexagonalPeg(10);
+        HexagonalPegAdapter largeHexagonalPegAdapter = new HexagonalPegAdapter(largeHexagonalPeg);
+        System.out.println("Hole fits large hexagonal peg: " + hole.fits(largeHexagonalPegAdapter));
+        
     }
 }
