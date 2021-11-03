@@ -15,7 +15,7 @@ public class LegalAssistant extends BaseAssistant
         String answer;
 
         do {
-            System.out.println("CUSTOMER ASSISTANT: Chose an option from the menu...: ");
+            System.out.println("LEGAL ASSISTANT: Chose an option from the menu...: ");
             answer = answerScanner.next();
 
             System.out.println("LEGAL ASSISTANT: Try solution...");
